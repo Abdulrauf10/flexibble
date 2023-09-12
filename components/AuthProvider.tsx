@@ -20,6 +20,7 @@ const AuthProvider = () => {
   useEffect(() => {
     const fetchProvider = async () => {
       const res = await getProviders()
+      // @ts-ignore
       setProviders(res)
     }
 
